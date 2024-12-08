@@ -17,24 +17,33 @@ The dataset used for the U-Net part is from the [Carvana Image Masking Challenge
 ### U-Net
 This folder contains all files related to the training, pruning, and evaluation of a 2D U-Net model:
 
-1. **`main.ipynb`**  
+1. **`U-Net/main.ipynb`**  
    - The main Jupyter Notebook that orchestrates the training, pruning, and evaluation workflow.
    - Includes step-by-step instructions and visualizations of model performance and metrics.
 
-2. **`custom_functions.py`**  
+2. **`U-Net/custom_functions.py`**  
    - Contains utility functions for various pruning techniques:
      - Structured and unstructured pruning (local and global).
      - Functions for evaluating model performance, including accuracy, IoU, and Dice coefficient.
      - Methods to count weights and filters in the model.
 
-3. **`custom_model.py`**  
+3. **`U-Net/custom_model.py`**  
    - Defines the architecture of the custom U-Net model using PyTorch's `nn.Module`.
    - Encoder-decoder structure with skip connections and transposed convolutions for upsampling.
 
-4. **`dataset.py`**  
+4. **`U-Net/dataset.py`**  
    - Implements the `CarDataset` class to handle the dataset.
    - Supports image and mask transformations for pre-processing.
    - Converts binary masks to tensors for PyTorch compatibility.
+
+---
+
+### SAURON
+This folder contains the implementation and evaluation of the SAURON pruning method:
+
+1. **`SAURON/sauron.ipynb`**  
+   - Notebook implementing SAURON for a simple CNN model.
+   - Includes model setup, pruning methodology, and performance evaluation.
 
 ---
 
@@ -49,7 +58,7 @@ This folder contains all files related to the training, pruning, and evaluation 
      ```
 
 2. **Adapt Paths in Code**  
-   - Update the paths in `dataset.py` or any other relevant files to match your local directory structure.
+   - Update the paths in `U-Net/dataset.py` or any other relevant files to match your local directory structure.
 
 ---
 
