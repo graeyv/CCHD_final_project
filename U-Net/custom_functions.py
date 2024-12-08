@@ -1,4 +1,3 @@
-# %%
 import torch
 import torch.nn.utils.prune as prune
 import copy
@@ -138,7 +137,6 @@ def countWeightsAndFilters(model):
                     zero_filters += 1
 
     return total_weights, zero_weights, total_filters, zero_filters
-# %%
 
 
 
