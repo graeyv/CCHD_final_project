@@ -1,12 +1,7 @@
-# %%
 import torch
 import torch.nn as nn
 from torch.nn.functional import relu
 
-# %% [markdown]
-# ### 1) define a custom UNET class
-
-# %%
 # define a custom UNet class as a sub-class of nn.Module
 class UNET(nn.Module):
     def __init__(self,n_class): 
